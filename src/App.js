@@ -3,7 +3,6 @@ import {useState, useEffect} from 'react';
 
 function Drugs({ drugs, caution, onClick }) {
   return (<div className={`medication__drugs borders-dark ${caution ? 'caution-light' : 'go-light '}`} onClick={()=>onClick()}>
-    {caution}
     <p className='bold'>{drugs[0].Generic.join(', ')}</p>
     <p>({drugs[0].Trade.join(', ')})</p>
   </div>);
